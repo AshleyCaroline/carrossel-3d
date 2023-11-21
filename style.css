@@ -1,0 +1,82 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    background: #ffffac;
+    font-family: sans-serif;
+    color: #000000
+}
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0px auto;
+    perspective: 900px;
+}
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+.imagem{
+    border-radius: 30px;
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+.imagem span{
+    border-radius: 20px;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+    background: #ffa07d50;
+}
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+.imagem:nth-child(1){
+    background-image: url(https://decormdfmt.com.br/wp-content/uploads/2019/01/Coroa-Queen-min.png);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2){
+    background-image: url(https://i.pinimg.com/originals/82/9c/15/829c15633cef94444c681910dfedd23b.gif);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://media.tenor.com/zQ5_pVmep1kAAAAd/water-watering.gif);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://gifdb.com/images/high/miku-hugging-a-plush-iu3gt5mriovs55bg.gif);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://media2.giphy.com/media/5jZXkQbkJHSGeJKsSk/giphy.gif);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://storage.ko-fi.com/cdn/useruploads/4b390f8b-9258-4185-a756-d5de1a33aa87_skate-small.gif);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://media.tenor.com/4MOc_udzsRQAAAAC/explosion.gif);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://media.tenor.com/F2Y3_avSUeoAAAAd/trans-pride-flag-trans-flag.gif);
+    transform: rotateY(320deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://i.pinimg.com/originals/6d/ac/76/6dac7647d2560f178450a9774021dab3.gif);
+    transform: rotateY(360deg) translateZ(430px);
+}
